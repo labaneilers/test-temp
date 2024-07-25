@@ -12,4 +12,5 @@ jobs:
     - uses: ./.github/actions/test
       with:
         test: test
+    - run: tldr tar
     - run: ls -la /usr/lib/node_modules
