@@ -1,0 +1,14 @@
+name: 'test'
+description: 'test'
+author: 'test'
+branding:
+  color: purple
+  icon: box
+inputs:
+  test:
+    required: false
+    description: test
+  
+runs:
+  using: 'node20'
+  main: 'test.js'

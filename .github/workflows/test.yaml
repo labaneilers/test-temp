@@ -8,4 +8,8 @@ jobs:
     runs-on: node20
     steps:
     # - run: ls -la /usr/lib/node_modules
-    - run: mkdir -p /usr/lib/node_modules/@test
+    - uses: actions/checkout@v4
+    - uses: ./.github/actions/test
+      with:
+        test: test
+    - run: ls -la /usr/lib/node_modules
