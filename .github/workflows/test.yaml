@@ -19,4 +19,4 @@ jobs:
       with:
         imageName: node
         runCmd: |
-            echo hello world
+            ls -la /usr/lib/node_modules
