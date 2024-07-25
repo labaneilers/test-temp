@@ -5,7 +5,7 @@ on:
 jobs:
   build:
     name: test
-    runs-on: ubuntu-latest
+    runs-on: node20
     steps:
     # - run: ls -la /usr/lib/node_modules
     - run: mkdir -p /usr/lib/node_modules/@test
