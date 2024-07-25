@@ -17,5 +17,6 @@ jobs:
     # - run: which tldr
     - uses: devcontainers/ci@v0.3
       with:
+        imageName: node:20-alpine
         runCmd: |
             echo hello world
