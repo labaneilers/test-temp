@@ -18,6 +18,8 @@ jobs:
     # # - run: ls -la /usr/lib/node_modules
     # - run: which tldr
     - run: env | sort
+    - run: cat ~/.bashrc
+    - run: echo "$PATH"
     - run: which npm
     - uses: devcontainers/ci@v0.3
       with:
