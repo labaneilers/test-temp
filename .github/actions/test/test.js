@@ -1,8 +1,8 @@
-const { execSync } = require('node:child_process').execSync;
+const { execSync } = require('node:child_process');
 
 console.log("Hello, World!");
 
-const result = execSync('bash', ['-c', `echo what is up`], { stdio: 'inherit', encoding: 'utf-8' });
+const result = execSync('npm install -g tldr', { stdio: 'inherit', encoding: 'utf-8' });
 
 console.log(result);
 
