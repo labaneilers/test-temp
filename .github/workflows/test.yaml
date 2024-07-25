@@ -21,6 +21,7 @@ jobs:
     - run: cat ~/.bashrc
     - run: echo "$PATH"
     - run: which npm
+    - run: which nvm
     - uses: devcontainers/ci@v0.3
       with:
         imageName: node
