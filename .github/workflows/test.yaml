@@ -9,9 +9,13 @@ jobs:
     steps:
     # - run: ls -la /usr/lib/node_modules
     - uses: actions/checkout@v4
-    - uses: ./.github/actions/test
+    # - uses: ./.github/actions/test
+    #   with:
+    #     test: test
+    # # - run: tldr tar
+    # # - run: ls -la /usr/lib/node_modules
+    # - run: which tldr
+    - uses: devcontainers/ci@v0.3
       with:
-        test: test
-    # - run: tldr tar
-    # - run: ls -la /usr/lib/node_modules
-    - run: which tldr
+        runCmd: |
+            echo hello world
