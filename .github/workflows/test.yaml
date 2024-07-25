@@ -1,0 +1,11 @@
+name: test
+on: 
+  push:
+
+jobs:
+  build:
+    name: test
+    runs-on: ubuntu
+    steps:
+    - run: ls -la /usr/lib/node_modules
+    - run: mkdir -p /usr/lib/node_modules/@test
