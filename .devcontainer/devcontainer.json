@@ -1,0 +1,39 @@
+// The Visual Studio Code Dev Containers extension lets you use a container as a full-featured 
+// development environment. It allows you to open any folder inside (or mounted into) a container 
+// and take advantage of Visual Studio Code's full feature set.
+//
+// `devcontainer.json` is a structured JSON with Comments (jsonc) metadata format that tools can 
+// use to store any needed configuration required to develop inside of local or cloud-based 
+// containerized coding
+//
+// Ref: https://containers.dev/overview
+{
+    // Features are self-contained units of installation code, container configuration, and/or 
+    // settings and extensions designed to enable new development capabilities in your dev 
+    // container. 
+    // Ref:
+    //  - https://code.visualstudio.com/blogs/2022/09/15/dev-container-features
+    //  - https://containers.dev/features
+    //  - https://github.com/devcontainers-contrib/features/tree/main
+    "features": {
+        "ghcr.io/devcontainers-contrib/features/hatch:2": {}
+    },
+    "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    // Commands to run once the container is created 
+    "postCreateCommand": "hatch -v env create;",
+    // A command to run each time a tool has successfully attached to the container.
+    "postAttachCommand": "cd ml-service; hatch test",
+    // Vscode extensions to install
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "njpwerner.autodocstring",
+                "github.copilot-chat",
+                "github.copilot",
+                "charliermarsh.ruff",
+                "tamasfe.even-better-toml"
+            ]
+        }
+    }
+}

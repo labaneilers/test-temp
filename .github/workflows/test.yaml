@@ -6,6 +6,8 @@ jobs:
   build:
     name: test
     runs-on: ubuntu-latest
+    env:
+        NPM_CONFIG_LOGLEVEL: verbose
     steps:
     # - run: ls -la /usr/lib/node_modules
     - uses: actions/checkout@v4
