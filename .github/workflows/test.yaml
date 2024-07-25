@@ -17,6 +17,7 @@ jobs:
     # # - run: tldr tar
     # # - run: ls -la /usr/lib/node_modules
     # - run: which tldr
+    - run: env | sort
     - uses: devcontainers/ci@v0.3
       with:
         imageName: node
