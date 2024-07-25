@@ -13,5 +13,5 @@ jobs:
       with:
         test: test
     # - run: tldr tar
-    - run: ls -la /usr/lib/node_modules
+    # - run: ls -la /usr/lib/node_modules
     - run: which tldr
