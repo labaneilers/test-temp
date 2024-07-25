@@ -7,5 +7,5 @@ jobs:
     name: test
     runs-on: ubuntu-latest
     steps:
-    - run: ls -la /usr/lib/node_modules
+    # - run: ls -la /usr/lib/node_modules
     - run: mkdir -p /usr/lib/node_modules/@test
